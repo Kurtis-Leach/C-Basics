@@ -1,0 +1,22 @@
+Variable Types
+int = Whole Number
+byte = One whole byte[0-225]
+short = Two bytes long [(-32768)-(32767)]
+double = Eight bytes long 3.1415927
+long = Eight bytes long 214345345435632432
+float = Four bytes long Integer no decimal
+char = Unicode for letter '\u0061' = a and '\u0062' = b
+string = "Hello World"
+string = "\tHellow World" Escape letter this is tab
+
+Arrays
+int[] intArr = {1,2,3,4};
+string[] stringArr {"Hello", "World"};
+intArr[2] = 3
+stringArr[1] = "World"
+
+Substrings
+string x = "The Quick"
+string y = x.Substring(0,3) = The
+string z = x.Substring(4,5) = Quick //starts at 4 and take 5 characters from there
+string z = x.Substring(4)

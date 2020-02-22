@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace Basics
 {
     class Program
@@ -7,37 +7,54 @@ namespace Basics
         static void Main(string[] args)
         {
             WriteLineHello();
-            Apple GrannySmith = new Apple("Granny Smith", "Green");
-            Apple Gala = new Apple("Gala");
-            GrannySmith.info();
-            Gala.info();
+            // Apple GrannySmith = new Apple("Granny Smith", "Green");
+            // Apple Gala = new Apple("Gala");
+            // GrannySmith.info();
+            // Gala.info();
+
+            List<string> fruits = new List<string>();
+            fruits.Add("Banana");
+            fruits.Add("Apple");
+            fruits.Add("Orange");
+            forEachItem(fruits);
+            fruits.Remove("Banana");
+            forEachItem(fruits);
+
+        }
+
+        public static void forEachItem(List<string> list){
+            foreach (string item in list)
+            {
+                Console.Write(item + " ");
+            }
+            Console.Write('\n');
         }
         public static void WriteLineHello()
         {
             Console.WriteLine("Hello World!");
         } 
-        class Apple
-        {
-            private string color;
-            private string type;
+        // class Apple
+        // {
+        //     private string color;
+        //     private string type;
 
-            //Constructor Method
-            public Apple(string t, string c)
-            {
-                type = t;
-                color = c;
-            }
-            //Second Contructor Method Called Overloading Constructors
-            public Apple(string t)
-            {
-                type = t;
-                color = "Red";
-            }
-            public void info()
-            {
-                Console.WriteLine($"Type: {type}");
-                Console.WriteLine($"Color: {color}");
-            }
-        }
+        //     //Constructor Method
+        //     public Apple(string t, string c)
+        //     {
+        //         type = t;
+        //         color = c;
+        //     }
+        //     //Second Contructor Method Called Overloading Constructors
+        //     public Apple(string t)
+        //     {
+        //         type = t;
+        //         color = "Red";
+        //     }
+        //     public void info()
+        //     {
+        //         Console.WriteLine($"Type: {type}");
+        //         Console.WriteLine($"Color: {color}");
+        //     }
+        // }
     }
 }
