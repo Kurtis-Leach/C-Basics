@@ -1,0 +1,10 @@
+/Users/kurtisleach/Desktop/CODE/C#/Basics/bin/Debug/netcoreapp3.1/Basics.deps.json
+/Users/kurtisleach/Desktop/CODE/C#/Basics/bin/Debug/netcoreapp3.1/Basics.runtimeconfig.json
+/Users/kurtisleach/Desktop/CODE/C#/Basics/bin/Debug/netcoreapp3.1/Basics.runtimeconfig.dev.json
+/Users/kurtisleach/Desktop/CODE/C#/Basics/bin/Debug/netcoreapp3.1/Basics.dll
+/Users/kurtisleach/Desktop/CODE/C#/Basics/bin/Debug/netcoreapp3.1/Basics.pdb
+/Users/kurtisleach/Desktop/CODE/C#/Basics/obj/Debug/netcoreapp3.1/Basics.csprojAssemblyReference.cache
+/Users/kurtisleach/Desktop/CODE/C#/Basics/obj/Debug/netcoreapp3.1/Basics.AssemblyInfoInputs.cache
+/Users/kurtisleach/Desktop/CODE/C#/Basics/obj/Debug/netcoreapp3.1/Basics.AssemblyInfo.cs
+/Users/kurtisleach/Desktop/CODE/C#/Basics/obj/Debug/netcoreapp3.1/Basics.dll
+/Users/kurtisleach/Desktop/CODE/C#/Basics/obj/Debug/netcoreapp3.1/Basics.pdb
