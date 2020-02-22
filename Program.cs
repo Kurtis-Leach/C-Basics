@@ -39,6 +39,18 @@ namespace Basics
             // {
             //     Console.WriteLine(i);
             // }
+
+            // Stack<int> numberStk = new Stack<int>();
+            // numberStk.Push(1);
+            // numberStk.Push(5);
+            // numberStk.Push(10);
+            // numberStk.Push(15);
+            // numberStk.Push(20);
+            // numberStk.Peek();
+            // foreach (int i in numberStk)
+            // {
+            //     Console.WriteLine(i);
+            // }
         }
 
         // public static void forEachItem(List<string> list){
