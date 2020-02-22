@@ -51,6 +51,18 @@ namespace Basics
             // {
             //     Console.WriteLine(i);
             // }
+
+            // LinkedList<string> names = new LinkedList<string>();
+            // names.AddLast("Kurtis");
+            // names.AddFirst("Brianna");
+            // names.AddFirst("Todd");
+            // names.AddLast("Shae");
+            // LinkedListNode<string> brianna = names.Find("Brianna");
+            // names.AddBefore(brianna, "Garrett");
+            // foreach (var name in names)
+            // {
+            //     Console.WriteLine(name);
+            // }
         }
 
         // public static void forEachItem(List<string> list){
