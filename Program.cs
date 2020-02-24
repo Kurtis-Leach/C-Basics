@@ -63,6 +63,83 @@ namespace Basics
             // {
             //     Console.WriteLine(name);
             // }
+
+            int[] randomNumbers = randomNumberGenerator(100);
+            Console.WriteLine(Environment.NewLine + "Unsorted: " + Environment.NewLine);
+            foreach (int num in randomNumbers)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine(Environment.NewLine + Environment.NewLine + "Press Enter");
+            Console.ReadLine();
+            quickSort(randomNumbers, 0, randomNumbers.Length - 1);
+            Console.WriteLine(Environment.NewLine + "Sorted: " + Environment.NewLine);
+            foreach (int num in randomNumbers)
+            {
+                Console.Write($"{num} ");
+            }
+        }
+
+        private static int[] randomNumberGenerator(int lengthOfArr)
+        {
+            int[] randomNumbers = new int[lengthOfArr];
+            byte i = 0;
+            Random random = new Random();
+            bool addToArr = true;
+            while (i < lengthOfArr)
+            {
+                int randomNumber = random.Next(1,lengthOfArr + 1);
+                addToArr = true;
+                for (int j = 0; j < i; j++)
+                {
+                    if (randomNumbers[j] == randomNumber)
+                    {
+                        addToArr = false;
+                        break;
+                    }
+                }
+                if (addToArr)
+                {
+                    randomNumbers[i] = randomNumber;
+                    i++;
+                }
+            }
+            return randomNumbers;
+        }
+        
+        public static void quickSort(int[] randomNumbers, int leftNum, int rightNum)
+        {
+            int l = leftNum;
+            int r = rightNum;
+            int pivot = randomNumbers[(l + r) / 2];
+
+            while (l <= r)
+            {
+                while (randomNumbers[l] < pivot)
+                {
+                    l++;
+                }
+                while (pivot < randomNumbers[r])
+                {
+                    r--;
+                }
+                if (l <= r)
+                {
+                    int temp = randomNumbers[l];
+                    randomNumbers[l] = randomNumbers[r];
+                    randomNumbers[r] = temp;
+                    l++;
+                    r--;
+                }
+                if ( leftNum < r)
+                {
+                    quickSort(randomNumbers, leftNum, r);
+                }
+                if (l < rightNum)
+                {
+                    quickSort(randomNumbers, l, rightNum);
+                }
+            }
         }
 
         // public static void forEachItem(List<string> list){
